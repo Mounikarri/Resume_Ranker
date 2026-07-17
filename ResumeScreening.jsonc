@@ -1,0 +1,58 @@
+{
+  "name": "ResumeScreening",
+  "type": "object",
+  "properties": {
+    "job_description_id": {
+      "type": "string",
+      "description": "Reference to the job description"
+    },
+    "candidate_name": {
+      "type": "string",
+      "description": "Name of the candidate"
+    },
+    "resume_file_url": {
+      "type": "string",
+      "description": "URL of uploaded resume file"
+    },
+    "resume_text": {
+      "type": "string",
+      "description": "Extracted text from resume"
+    },
+    "match_score": {
+      "type": "number",
+      "description": "Overall match score 0-100"
+    },
+    "matched_skills": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Skills found in both resume and job description"
+    },
+    "missing_skills": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Required skills not found in resume"
+    },
+    "summary": {
+      "type": "string",
+      "description": "AI-generated summary of candidate fit"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "screened",
+        "shortlisted",
+        "rejected"
+      ],
+      "default": "pending"
+    }
+  },
+  "required": [
+    "job_description_id",
+    "candidate_name"
+  ]
+}
