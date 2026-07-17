@@ -1,77 +1,210 @@
-# Base44 Project
+# 🚀 Resume Ranker – AI-Powered ATS Resume Analyzer
 
-Use this repository to run and edit the app locally, then publish changes back through Base44.
+An AI-powered Resume Ranker that evaluates resumes against job descriptions and provides an ATS compatibility score, keyword analysis, and personalized improvement suggestions. This project helps job seekers optimize their resumes for Applicant Tracking Systems (ATS) and improve their chances of getting shortlisted.
 
-Any change pushed to the repo will also be reflected in the Base44 Builder.
+---
 
-## Prerequisites
+## 📌 Overview
 
-1. Clone the repository using the project's Git URL.
-2. Navigate to the project directory.
-3. Install dependencies: `npm install`.
-4. Install the Base44 CLI: `npm install -g base44@latest`.
+Recruiters often use Applicant Tracking Systems (ATS) to filter resumes before they reach hiring managers. This application analyzes a candidate's resume against a job description and identifies missing keywords, matching skills, and improvement areas.
 
-See the [Base44 CLI docs](https://docs.base44.com/developers/references/cli/get-started/overview) if you want to run Base44 commands directly.
+---
 
-## Run Locally
+## ✨ Features
 
-Run the full local development environment from the project root:
+- 📄 Upload Resume (PDF/DOCX)
+- 📝 Paste Job Description
+- 📊 ATS Compatibility Score
+- 🔍 Keyword Matching Analysis
+- 🎯 Skill Gap Identification
+- 💡 AI-Powered Resume Improvement Suggestions
+- 📈 Resume Match Percentage
+- 📱 Responsive User Interface
+- ⚡ Fast Resume Processing
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- React.js
+- TypeScript
+- Vite
+- HTML5
+- CSS3
+
+### Backend
+- Base44
+- JavaScript
+
+### Tools
+- Git
+- GitHub
+- VS Code
+
+---
+
+## 📂 Project Structure
+
+```
+Resume-Ranker/
+│
+├── src/
+├── public/
+├── components/
+├── pages/
+├── services/
+├── assets/
+├── package.json
+├── README.md
+└── base44/
+```
+
+---
+
+## ⚙️ Installation
+
+Clone the repository
 
 ```bash
-base44 dev
+git clone https://github.com/yourusername/resume-ranker.git
 ```
 
-`base44 dev` starts the local Base44 development backend and, when this app is configured for it, also starts the frontend dev server for you. Use the frontend URL printed by the command.
+Go to project folder
 
-For example, when the Base44 project config includes a `serveCommand`, `base44 dev` can launch the frontend too:
-
-```json5
-{
-  "site": {
-    "serveCommand": "npm run dev"
-  }
-}
+```bash
+cd resume-ranker
 ```
 
-In a Base44 project this lives in `base44/config.jsonc`.
+Install dependencies
 
-## Run Only The Frontend
+```bash
+npm install
+```
 
-If you only want to work on the frontend against the hosted Base44 backend, run:
+Run the application
 
 ```bash
 npm run dev
 ```
 
-Open the local URL printed by Vite.
+---
 
-## Use The Hosted Backend
+## 🔧 Base44 Development
 
-For frontend-only development, create or update `.env.local` in the project root:
-
-```bash
-VITE_BASE44_APP_ID=your_app_id
-VITE_BASE44_APP_BASE_URL=https://your-app.base44.app
-```
-
-`VITE_BASE44_APP_ID` identifies the Base44 app.
-
-`VITE_BASE44_APP_BASE_URL` tells the Base44 Vite plugin where to send local `/api` requests. Point it at your deployed Base44 app URL when you want the local frontend to use the hosted backend.
-
-When you use `base44 dev`, the command injects the local Base44 values for you, so `.env.local` is mainly needed for frontend-only workflows.
-
-## Publish Your Changes
-
-After pushing your changes to git, open the Base44 dashboard and publish the app:
+Install Base44 CLI
 
 ```bash
-base44 dashboard open
+npm install -g base44@latest
 ```
 
-## Docs & Support
+Run locally
 
-Documentation: [https://docs.base44.com/Integrations/Using-GitHub](https://docs.base44.com/Integrations/Using-GitHub)
+```bash
+base44 dev
+```
 
-Base44 CLI command reference: [https://docs.base44.com/developers/references/cli/commands/introduction](https://docs.base44.com/developers/references/cli/commands/introduction)
+---
 
-Support: [https://app.base44.com/support](https://app.base44.com/support)
+## 📸 Screenshots
+
+### Home Page
+
+(Add Screenshot)
+
+### Resume Upload
+
+(Add Screenshot)
+
+### ATS Analysis Result
+
+(Add Screenshot)
+
+### Skill Gap Report
+
+(Add Screenshot)
+
+---
+
+## 📊 Workflow
+
+1. Upload Resume
+2. Enter Job Description
+3. Analyze Resume
+4. Compare Keywords
+5. Calculate ATS Score
+6. Display Missing Skills
+7. Generate Suggestions
+
+---
+
+## 🎯 Future Enhancements
+
+- AI Resume Rewrite
+- Resume Templates
+- Interview Question Generator
+- Cover Letter Generator
+- Multiple Resume Comparison
+- Resume Version History
+- One-click Export
+- Cloud Storage Integration
+
+---
+
+## 💼 Learning Outcomes
+
+Through this project I gained practical experience in:
+
+- Building modern React applications
+- Component-based UI development
+- State management
+- API integration
+- Resume parsing concepts
+- ATS optimization techniques
+- Git & GitHub collaboration
+- Frontend deployment
+
+---
+
+## 🚀 Deployment
+
+You can deploy using:
+
+- Vercel
+- Netlify
+- Base44
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome.
+
+1. Fork the repository
+2. Create a feature branch
+3. Commit changes
+4. Push to GitHub
+5. Open a Pull Request
+
+---
+
+## 👩‍💻 Author
+
+**Karri Mounika**
+
+B.Tech – Computer Science & Engineering
+
+GitHub:
+https://github.com/Mounikarri
+
+LinkedIn:
+https://linkedin.com/in/mounika-karri-
+
+
+---
+
+## ⭐ Support
+
+If you found this project useful, consider giving it a ⭐ on GitHub.
+
+It motivates me to build more open-source projects.
